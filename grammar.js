@@ -22,10 +22,16 @@ module.exports = grammar({
     tripleDash: $ => "---\n",
     headerContent: $ => seq(
       $.headerSource,
+      optional($.headerAssertion),
       $.headerExpression,
     ),
     headerSource: $ => seq(
       "source: ",
+      $.restOfLine,
+      "\n",
+    ),
+    headerAssertion: $ => seq(
+      "assertion_line: ",
       $.restOfLine,
       "\n",
     ),

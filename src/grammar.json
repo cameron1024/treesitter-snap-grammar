@@ -44,6 +44,18 @@
           "name": "headerSource"
         },
         {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "headerAssertion"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
           "type": "SYMBOL",
           "name": "headerExpression"
         }
@@ -55,6 +67,23 @@
         {
           "type": "STRING",
           "value": "source: "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "restOfLine"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "headerAssertion": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "assertion_line: "
         },
         {
           "type": "SYMBOL",

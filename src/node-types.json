@@ -24,6 +24,21 @@
     }
   },
   {
+    "type": "headerAssertion",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "restOfLine",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "headerContent",
     "named": true,
     "fields": {},
@@ -31,6 +46,10 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "headerAssertion",
+          "named": true
+        },
         {
           "type": "headerExpression",
           "named": true
@@ -94,6 +113,10 @@
   },
   {
     "type": "\n",
+    "named": false
+  },
+  {
+    "type": "assertion_line: ",
     "named": false
   },
   {
