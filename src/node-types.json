@@ -1,0 +1,115 @@
+[
+  {
+    "type": "body",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "header",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "headerContent",
+          "named": true
+        },
+        {
+          "type": "tripleDash",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "headerContent",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "headerExpression",
+          "named": true
+        },
+        {
+          "type": "headerSource",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "headerExpression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "restOfLine",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "headerSource",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "restOfLine",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "body",
+          "named": true
+        },
+        {
+          "type": "header",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "expression: ",
+    "named": false
+  },
+  {
+    "type": "restOfLine",
+    "named": true
+  },
+  {
+    "type": "source: ",
+    "named": false
+  },
+  {
+    "type": "tripleDash",
+    "named": true
+  }
+]
